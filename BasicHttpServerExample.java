@@ -15,7 +15,7 @@ public class BasicHttpServerExample {
   }
 
   private static void handleRequest(HttpExchange exchange) throws IOException {
-      String response = "Hi there!";
+      String response = "Hi there, I am learning docker";
       exchange.sendResponseHeaders(200, response.getBytes().length);//response code and length
       OutputStream os = exchange.getResponseBody();
       os.write(response.getBytes());
